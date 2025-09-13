@@ -14,6 +14,7 @@ export default function HelpBar() {
 
   // Responsive width
   useEffect(() => {
+    console.log(barWidth)
     const compute = () => setBarWidth(Math.min(420, Math.max(300, window.innerWidth - 32)));
     compute();
     window.addEventListener("resize", compute);
